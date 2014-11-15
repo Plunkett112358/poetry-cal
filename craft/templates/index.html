@@ -1,0 +1,98 @@
+{% extends '_layout' %}
+
+
+{% block content %}
+
+<div id="carousel-example-generic" style="height: 500px;"class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div style="height: 500px;" class="carousel-inner">
+
+  	 <div class="item active">
+      <img class="img-responsive" src="https://tanayawinder.files.wordpress.com/2014/10/img_20140921_222757.jpg" alt="...">
+      <div class="carousel-caption">
+    
+      </div>
+    </div>
+
+    <div class="item ">
+      <img class="img-responsive" src="http://www.citywindsor.ca/residents/Culture/PublishingImages/Poetry%20at%20the%20Manor%20Crowd%203.JPG">
+      <div class="carousel-caption">
+     
+      </div>
+    </div>
+
+   
+   
+    <div class="item">
+      <img class="img-responsive" src="http://wwwlifespancom.c.presscdn.com/wp-content/uploads/2014/02/books-in-home-library.jpg" alt="...">
+      <div class="carousel-caption">
+     
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<div class="container">
+
+	<div class="page-header">
+	  <h1>NYC Readings</h1>
+	</div>
+
+	<div class="filters">
+
+		<form class="form-inline">
+			<label>Filter by Borough: </label>
+			<select class="form-control">
+				<option value="volvo"></option>
+			  	<option value="volvo">Manhattan</option>
+			  	<option value="saab">Brooklyn</option>
+			  	<option value="mercedes">Bronx</option>
+			  	<option value="audi">Queens</option>
+			  	<option value="audi">Staten Island</option>
+			   	<option value="audi">Governors Island</option>
+			</select>
+
+			<label>Filter by Genre: </label>
+			<select class="form-control">
+				<option value="volvo"></option>
+			  	<option value="volvo">Poetry</option>
+			  	<option value="saab">Fiction</option>
+			  	<option value="mercedes">Multi-Genre</option>
+			  	
+			</select>
+
+			<label>Filter by Date: </label>
+			 <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+
+
+		</form>
+		
+
+		
+	</div>
+
+</div>
+
+{% includeJsFile '/scripts/date.js' %}
+
+{% endblock %}
